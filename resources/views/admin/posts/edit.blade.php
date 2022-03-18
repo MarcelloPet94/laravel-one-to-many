@@ -18,10 +18,19 @@
                 name="content"
                 placeholder="Descrizione del prodotto">{{ old('content') ?? $post->content }}</textarea>
             </div>
+            
+            <select name="category_id" class="form-control">
+                <option value=""> -- </option>
+                @foreach ($categories as $option)
+                    <option value="{{ $option->id }}"> {{ $option->name }} </option>
+                @endforeach
+            </select>  
+
             <div class="space_btn_area">
                 <a href="{{ route('admin.posts.index')}}" class="btnStyl goback">Go back</a>                
                 <button type="submit" class="btn_funct save_edit_btn">Edit</button>
             </div>  
+            
         </form>
 
         @if ($errors->any())

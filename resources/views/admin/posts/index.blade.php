@@ -11,6 +11,7 @@
                 <li>Title</li>
                 <li>Contenuto</li>
                 <li>Slug</li>
+                <li>Categoria</li>
                 <li>Operation</li>
             </ul>
         </div>
@@ -21,6 +22,7 @@
                     <li>{{$post->title}}</li>
                     <li>{{$post->content}}</li>
                     <li>{{$post->slug}}</li>
+                    <li>{{$post->category ? $post->category->name : 'No category'}}</li>
                     <li>
                     <div class="space_btn_area">
                         <a class="btn_funct goback" href="{{ route('admin.posts.show', $post->id) }}">Open</a>
