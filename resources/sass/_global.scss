@@ -1,0 +1,81 @@
+.space_btn_area
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+}
+
+.btnStyl
+{
+    border-radius: 15px;
+    padding: 16px;
+}
+
+.btn_funct
+{
+    border-radius: 15px;    
+    padding: 16px 24px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.save_edit_btn
+{
+    background-color:rgb(1, 206, 45);
+}
+
+.delete_btn
+{
+    background-color:rgb(214, 0, 0);
+}
+
+.goback
+{
+    color: #fff;
+    background-color: blue;
+}
+
+.align_controller
+{
+    display: flex;
+}
+
+.admin_controller
+{
+    padding-left: 24px;
+}
+
+.admin_controller a
+{
+    display: block;
+    margin: 16px 0 16px;
+    line-height: 2em;
+    border-bottom: 1px solid lightblue;
+
+}
+
+/*  */
+
+.ind
+{
+    border-top: 1px solid #010101;
+    border-bottom: 1px solid #010101;
+}
+
+.ind ul li
+{
+    font-weight: 800;
+}
+
+.container .riga ul
+{
+    display: flex;
+}
+
+.container .riga ul li 
+{    
+    width: 20%;
+    padding: 8px;
+    list-style: none;
+}
